@@ -1,0 +1,10 @@
+npm init // creates package.json
+"start": "node index.js" // create start script within package.json
+npm run start //to start server, runs the index.js file
+npm install express // installs express module, creates package-lock.json,installs node_modules
+
+npm i dotenv // port for production
+create .env file
+PORT=3000// within .env file. Port 3000 will be used for listining now if avaliable
+within index.js -> require('dotenv').config()
+within index.js -> process.env.PORT in the listen function insted of port
